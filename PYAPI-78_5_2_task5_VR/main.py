@@ -21,7 +21,7 @@ with open('recipes.txt', 'r', encoding='UTF-8') as recipes:
     print(cook_book)
 
 
-def shop_list(dishes, person_count):
+def get_shop_list_by_dishes(dishes, person_count):
     amount_ingredients = {}
     for dish in dishes:
         if dish in cook_book.keys():
@@ -34,4 +34,4 @@ def shop_list(dishes, person_count):
 
 print('=====')
 
-shop_list(['Запеченный картофель', 'Омлет'], 5)
+get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2)
